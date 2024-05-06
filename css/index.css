@@ -30,7 +30,17 @@
 #playa3{
     height: 180px; 
 }
+#hapuna1{
+    height: 180px;
+}
+#hapuna2{
+    height: 180px;
+}
+#hapuna3{
+    height: 180px;
+}
 /* end of image resizing */
+
 /* carousel individual padding */
 #carouselHawaii{
     padding-top: 20px;
@@ -41,3 +51,4 @@
 #carouselCostaRica{
     padding-top: 20px;
 }
+/* end of carousel padding */
