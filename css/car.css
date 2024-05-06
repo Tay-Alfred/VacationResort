@@ -1,0 +1,30 @@
+#spaceBreak1{
+    padding-top: 30px;
+}
+
+#carRentalBox{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 10px solid #ea9999;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+#tollTag{
+    background-color: #ea9999;
+}
+#GPS{
+    background-color: #ea9999;
+}
+#roadside{
+    background-color: #ea9999;
+}
+input[type="radio"]{
+   border-color: #ea9999;
+    background-color: #ea9999;
+}
+button{
+    border-color: #ea9999;
+}
