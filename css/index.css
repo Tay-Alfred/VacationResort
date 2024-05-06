@@ -1,0 +1,43 @@
+#vacationBoxes{
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between carousels */
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px;
+  }
+/* image resizing */
+#pinkBeach1{
+    height: 180px;
+}
+#pinkBeach2{
+    height: 180px;
+}
+#pinkBeach3{
+    height: 180px;
+}
+#playa1{
+    height: 180px; 
+}
+#playa2{
+    height: 180px; 
+}
+#playa3{
+    height: 180px; 
+}
+/* end of image resizing */
+/* carousel individual padding */
+#carouselHawaii{
+    padding-top: 20px;
+}
+#carouselBahamas{
+    padding-top: 20px;
+}
+#carouselCostaRica{
+    padding-top: 20px;
+}
