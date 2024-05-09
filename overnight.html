@@ -1,56 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation Resort-Overnight Stay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/overnight.css">
 </head>
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-rosemary">
         <div id="plantnavbar" class="flex-container-fluid text-center ">
-         <a id="homepagetitle" class="navbar-brand" href="index.html">Jamirah's Island Bliss Escapes</a>
-      
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">      
-            <span class="navbar-toggler-icon"></span>
-      
-          </button>
-      
-        </div>
-      
-        <div class="container-fluid text-center">
-      
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-            <div class="flex-container">
-      
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      
-              <li class="nav-item">
-                <a class="nav-link" href="overnight.html">Overnight Stays </a>
-              </li>
-      
-              <li class="nav-item">
-                <a class="nav-link" href="dining.html">Dining Plans</a>
-              </li>
-      
-              <li class="nav-item">
-                <a class="nav-link" href="car.html">Car Rentals</a>
-              </li>
+            <a id="homepagetitle" class="navbar-brand" href="index.html">Jamirah's Island Bliss Escapes</a>
 
-              <li class="nav-item">      
-                <a class="nav-link" href="checkout.html">Checkout |
-                </a>
-              </li>
-      
-              </div>
-      
-          </div>
-      
-      
-        </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+        </div>
+
+        <div class="container-fluid text-center">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="flex-container">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="overnight.html">Overnight Stays </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="dining.html">Dining Plans</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="car.html">Car Rentals</a>
+                        </li>
+
+                </div>
+
+            </div>
+
+
+    </nav>
+    <h1>Overnight Cost Estimator</h1>
 </header>
+
 <body>
-    
+    <main>
+        <section>
+            <form>
+                <label for="firstName" class="label">First Name</label>
+                <input type="firstName" class="name" id="inputFirstName" placeholder="Taylor">
+
+                <label for="lastName" class="label">Last Name</label>
+                <input type="lastName" class="name" id="inputLastName" placeholder="Daniels">
+
+                <label for="email" class="label">Email</label>
+                <input type="email" class="email" id="inputEmail" placeholder="TDaniels@hotmail.net">
+
+                <section></section>
+
+                <label for="checkIn" class="label">Check-In Date</label>
+                <input type="date" class="date" id="checkIn" required>
+
+                <label for="nightsNumber" class="label">Number of Nights</label>
+                <input type="number" class="number" id="numOfNights" min="1" max="30" required>
+
+                <div class="form-group">
+                    <fieldset id="radioButtons">
+                        <legend id="radioSelection">Select Room Type</legend>
+                        <input type="radio" class="radioButton" name="roomRadio" id="queenOneBed"> <label>Queen - 1 Bed</label>
+                        <input type="radio" class="radioButton" name="roomRadio" id="queenTwoBed"> <label>Queen - 2 Bed</label>
+                        <input type="radio" class="radioButton" name="roomRadio" id="kingBed"> <label> King</label>
+                        <input type="radio" class="radioButton" name="roomRadio" id="californiaKingBed"> <label>California King</label>
+                        <input type="radio" class="radioButton" name="roomRadio"> <label>Penthouse</label>
+                    </fieldset>
+                </div>
+                 
+                <section></section>
+
+                <div class="row">
+                    <label for="numOfAdults" class="label"># of Adults</label>
+                    <input id="numOfAdults" type="number" min="1" max="4">
+
+                    <label for="numOfChildren" class="label"># of Children</label>
+                    <input id="numOfChildren" type="number" min="0" max="4">
+                </div>
+                <section></section>
+                <fieldset id="discountsBox">
+                    <legend>Applicable Discounts</legend>
+                    <input type="radio" class="radioButton" name="discountButtons"> <label>None</label>
+                <input type="radio" class="radioButton" name="discountButtons" id="seniorDiscount"> <label>AAA / Senior (10%)</label>
+                <input type="radio" class="radioButton" name="discountButtons" id="militaryDiscount"> <label>Military (20%)</label>
+                </fieldset>
+                
+                <button class="btn-btn-secondary" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </html>
