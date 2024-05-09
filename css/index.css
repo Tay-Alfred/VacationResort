@@ -1,3 +1,27 @@
+
+/* start of image box css */
+#imageBox{
+    border: 1px solid #000;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#imageBeach{
+    
+}
+/* end of image box css */
+
+/* start of getaway information */
+#getawayBox{
+    border: 1px solid #000;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+/* end of getaway information */
+/* start of vacation boxes css */
 #vacationBoxes{
     border: 1px solid #000;
     display: flex;
@@ -52,3 +76,4 @@
     padding-top: 20px;
 }
 /* end of carousel padding */
+/* end of vacation boxes css */
