@@ -1,14 +1,139 @@
-fieldset{border: 1px solid #000;
-}
-#overnightBox{
-    width: 60%;
-    border: 2px solid #000;
-    padding: 40px;
-    margin-left: auto;
-    margin-right: auto;
+#headText{
     margin-top: 7%;
 }
+#plantnavbar{
+    z-index: 1;
+}
+#navbarSupportedContent{
+    z-index: 1;
+}
+
 #submitButton{
     margin-top: 2%;
     width: 7%;
 }
+#radioButtons{
+    max-width: 60%;
+}
+#imageBackgroundTest{
+    display: block;
+    float: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+    width: 100%;
+    height: auto;
+    opacity: 0.5; /* Optional: adjust opacity as needed */
+}
+
+#overnightBox {
+    width: 60%;
+    padding: 40px;
+    margin: 5% auto 0; /* Adjusted margin */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative; /* Changed to relative positioning */
+    text-align: center;
+    z-index: 1; /* Ensures the box is above the image */
+}
+/* overnight box additional styling */
+#firstName{
+    margin-bottom: 2%;
+}
+#lastName{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#email{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#numOfNightsText{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+#checkInText{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#inputFirstName{
+    max-width: 50%;
+    width: 50%;
+}
+#inputLastName{
+    max-width: 50%;
+    width: 50%;
+}
+#inputEmail{
+    max-width: 50%;
+    width: 50%;
+}
+#checkIn{
+    max-width: 50%;
+    width: 50%;
+}
+#numOfAdults{
+    max-width: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+#numOfChildren{
+    max-width: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+#numberPeople{
+    margin-top: 2%;
+}
+#numberPeople2{
+    margin-top: 2%;
+}
+.radio-group {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+/* end of overnight box styling */
+
+/* start of bed type styling */
+#bedStyles {
+    margin-top: 80px; /* Adjusted margin to create space between overnightBox and bedStyles */
+    text-align: center; /* Center the content */
+  }
+  
+#bedButtons {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 10px; /* Add space between items */
+  }
+#bedPicture1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+  }
+#bedPicture2{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+#bedPicture3{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+#bedPicture4{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+#radioSelection{
+    padding-bottom: 2%;
+  }
+.card-link{
+    padding-left: 5%;
+}
+/* end of bed type styling */
+

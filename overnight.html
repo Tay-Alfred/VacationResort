@@ -49,60 +49,118 @@
 
 
     </nav>
-    <h1>Overnight Cost Estimator</h1>
+    <h1 id="headText" class="text-center">Let's Plan Your Night with Us</h1>
 </header>
 
 <body>
     <main>
+        <img src="images/pinkBeach3.jpg" alt="Woman walking on the beach" id="imageBackgroundTest">
         <section id="overnightBox">
             <form>
-                <label for="firstName" class="label">First Name</label>
+                <label for="firstName" class="label" id="firstName">First Name</label>
+                <section></section>
                 <input type="firstName" class="name" id="inputFirstName" placeholder="Taylor" required>
-
-                <label for="lastName" class="label">Last Name</label>
+                <section></section>
+                <label for="lastName" class="label" id="lastName">Last Name</label>
+                <section></section>
                 <input type="lastName" class="name" id="inputLastName" placeholder="Daniels" required>
-
-                <label for="email" class="label">Email</label>
+                <section></section>
+                <label for="email" class="label" id="email">Email</label>
+                <section></section>
                 <input type="email" class="email" id="inputEmail" placeholder="TDaniels@hotmail.net" required>
 
                 <section></section>
 
-                <label for="checkIn" class="label">Check-In Date</label>
+                <label for="checkIn" class="label" id="checkInText">Check-In Date</label>
+                <section></section>
                 <input type="date" class="date" id="checkIn" required>
-
-                <label for="nightsNumber" class="label">Number of Nights</label>
+                <section></section>
+                <label for="nightsNumber" class="label" id="numOfNightsText">Number of Nights</label>
+                <section></section>
                 <input type="number" class="number" id="numOfNights" min="1" max="30" required>
 
-                <div class="form-group">
-                    <fieldset id="radioButtons">
-                        <legend id="radioSelection">Select Room Type</legend>
-                        <input type="radio" class="radioButton" name="roomRadio" id="queenOneBed"> <label>Queen - 1 Bed</label>
-                        <input type="radio" class="radioButton" name="roomRadio" id="queenTwoBed"> <label>Queen - 2 Bed</label>
-                        <input type="radio" class="radioButton" name="roomRadio" id="kingBed"> <label> King</label>
-                        <input type="radio" class="radioButton" name="roomRadio" id="californiaKingBed"> <label>California King</label>
-                        <input type="radio" class="radioButton" name="roomRadio"> <label>Penthouse</label>
-                    </fieldset>
-                </div>
-                 
+
+
                 <section></section>
 
                 <div class="row">
-                    <label for="numOfAdults" class="label"># of Adults</label>
+                    <label for="numOfAdults" class="label" id="numberPeople"># of Adults</label>
                     <input id="numOfAdults" type="number" min="1" max="4" required>
 
-                    <label for="numOfChildren" class="label"># of Children</label>
+                    <label for="numOfChildren" class="label" id="numberPeople2"># of Children</label>
                     <input id="numOfChildren" type="number" min="0" max="4" required>
                 </div>
                 <section></section>
                 <fieldset id="discountsBox">
                     <legend>Applicable Discounts</legend>
-                    <input type="radio" class="radioButton" name="discountButtons"> <label>None</label>
-                <input type="radio" class="radioButton" name="discountButtons" id="seniorDiscount"> <label>AAA / Senior (10%)</label>
-                <input type="radio" class="radioButton" name="discountButtons" id="militaryDiscount"> <label>Military (20%)</label>
+                    <div class="radio-group">
+                        <input type="radio" class="radio-button" name="discountButtons" id="none"> <label for="none">None</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" class="radio-button" name="discountButtons" id="seniorDiscount"> <label for="seniorDiscount">AAA / Senior (10%)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" class="radio-button" name="discountButtons" id="militaryDiscount"> <label for="militaryDiscount">Military (20%)</label>
+                    </div>
                 </fieldset>
                 
-                <button id="submitButton" class="btn-btn-secondary" type="submit">Submit</button>
             </form>
+        </section>
+        <section id="bedStyles">
+        
+            <h2 id="radioSelection">Tailor your stay to your preferences by selecting your preferred room
+                        type. </h2>
+            <div class="form-group">
+                <fieldset id="bedButtons">
+                    
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Queen Style - 1 Bed</h5>
+                            <img src="images/queen1bed.jpg" alt="A single queen bed" id="bedPicture1" width="200px">
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Tranquil Retreat: Your One-Bedroom
+                                Sanctuary by the Shore</h6>
+                            <button class="btn-btn-secondary" name="bookQueenOne" id="queenOneBed">Get Estimate</button>
+                            <a href="index.html" class="card-link text-danger">Add to Wishlist</a>
+                        </div>
+                    </div>
+                    <section></section>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Queen Style - 2 Beds</h5>
+                            <img src="images/queen2bed.jpg" alt="Two queen beds" id="bedPicture2" width="200px">
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Coastal Comfort: Your Spacious
+                                Two-Bedroom Haven by the Sea</h6>
+                            <button class="btn-btn-secondary" name="bookQueenTwo" id="queenTwoBed">Get Estimate</button>
+                            <a href="index.html" class="card-link text-danger">Add to Wishlist</a>
+                        </div>
+                    </div>
+                    <section></section>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">King Bed</h5>
+                            <img src="images/kingbed.jpg" alt="A single king bed" id="bedPicture3" width="200px">
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Royal Serenity: Your Luxurious King Bed
+                                Oasis by the Beach</h6>
+                            <button class="btn-btn-secondary" name="bookKing" id="kingBed">Get Estimate</button>
+                            <a href="index.html" class="card-link text-danger">Add to Wishlist</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">California King Bed</h5>
+                            <img src="images/californiakingbed.jpg" alt="A single California king bed" id="bedPicture4"
+                                width="200px">
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Californian Charm: Your Exclusive
+                                California King Bed Retreat</h6>
+                            <button class="btn-btn-secondary" name="bookCaliKing" id="kingBed">Get Estimate</button>
+                            <a href="index.html" class="card-link text-danger">Add to Wishlist</a>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <button id="submitButton" class="btn-btn-secondary" type="submit">Submit</button>
         </section>
     </main>
 </body>
