@@ -1,3 +1,6 @@
+body{
+    background-color: #fff;
+}
 #headText{
     margin-top: 5%;
 }
@@ -24,20 +27,34 @@
     z-index: 0; 
     width: 100%;
     height: auto;
-    opacity: 0.5; /* Optional: adjust opacity as needed */
+    opacity: 1; /* Optional: adjust opacity as needed */
 }
+/* Primary Color:
 
+#3498db (Flat Blue)
+Accent Color:
+
+#2ecc71 (Emerald Green)
+Neutral Color for Text:
+
+#333333 (Charcoal Gray)
+Light Background Color:
+
+#f5f5f5 (Light Gray)
+Dark Background Color:
+
+#ecf0f1 (Off-White) */
 #overnightBox {
     width: 60%;
     padding: 40px;
     margin: 5% auto 0; /* Adjusted margin */
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: #fff;
+    border: 1px solid #a8dafb;
     border-radius: 5px;
     position: relative; /* Changed to relative positioning */
     text-align: center;
     z-index: 1; /* Ensures the box is above the image */
-    
+    box-shadow: 2px 2px 5px #a8dafb;
 }
 /* overnight box additional styling */
 #firstName{
@@ -111,11 +128,13 @@
 #bedButtons {
     display: flex;
     justify-content: center; /* Center the items horizontally */
-    gap: 10px; /* Add space between items */
+    gap: 20px; /* Add space between items */
+    max-width: 200%;
   }
 #bedPicture1{
     margin-top: 10px;
     margin-bottom: 15px;
+    max-width: 200%;
     
   }
 #bedPicture2{
@@ -144,10 +163,18 @@
     margin-right: auto;
     margin-top: 2%;
     margin-bottom: 5%;
+    background-color: #a8dafb;
 }
 #estimateText{
     width: 100%;
     margin-top: 3%;
     font-size: large;
     font-weight: bold;
+}
+.card{
+    background-color: #a8dafb;
+}
+#overnightHeader{
+    background-color: #a8dafb;
+    z-index: 1;
 }
