@@ -94,25 +94,28 @@
                 <fieldset id="discountsBox">
                     <legend>Applicable Discounts</legend>
                     <div class="radio-group">
-                        <input type="radio" class="radio-button" name="discountButtons" id="none"> <label for="none">None</label>
+                        <input type="radio" class="radio-button" name="discountButtons" id="none"> <label
+                            for="none">None</label>
                     </div>
                     <div class="radio-group">
-                        <input type="radio" class="radio-button" name="discountButtons" id="seniorDiscount"> <label for="seniorDiscount">AAA / Senior (10%)</label>
+                        <input type="radio" class="radio-button" name="discountButtons" id="seniorDiscount"> <label
+                            for="seniorDiscount">AAA / Senior (10%)</label>
                     </div>
                     <div class="radio-group">
-                        <input type="radio" class="radio-button" name="discountButtons" id="militaryDiscount"> <label for="militaryDiscount">Military (20%)</label>
+                        <input type="radio" class="radio-button" name="discountButtons" id="militaryDiscount"> <label
+                            for="militaryDiscount">Military (20%)</label>
                     </div>
                 </fieldset>
-                
+
             </form>
         </section>
         <section id="bedStyles">
-        
+
             <h2 id="radioSelection">Tailor your stay to your preferences by selecting your preferred room
-                        type. </h2>
+                type. </h2>
             <div class="form-group">
                 <fieldset id="bedButtons">
-                    
+
 
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
@@ -120,7 +123,7 @@
                             <img src="images/queen1bed.jpg" alt="A single queen bed" id="bedPicture1" width="200px">
                             <h6 class="card-subtitle mb-2 text-body-secondary">Tranquil Retreat: Your One-Bedroom
                                 Sanctuary by the Shore</h6>
-                            <button class="btn-btn-secondary" name="bookQueenOne" id="queenOneBed">Get Estimate</button>
+                            <button class="btn-btn-secondary" name="bookRoom" id="queenOneBed">Get Estimate</button>
                             <a href="index.html" class="card-link text-danger">Add to Wishlist</a>
                         </div>
                     </div>
@@ -131,7 +134,7 @@
                             <img src="images/queen2bed.jpg" alt="Two queen beds" id="bedPicture2" width="200px">
                             <h6 class="card-subtitle mb-2 text-body-secondary">Coastal Comfort: Your Spacious
                                 Two-Bedroom Haven by the Sea</h6>
-                            <button class="btn-btn-secondary" name="bookQueenTwo" id="queenTwoBed">Get Estimate</button>
+                            <button class="btn-btn-secondary" name="bookRoom" id="queenTwoBed">Get Estimate</button>
                             <a href="index.html" class="card-link text-danger">Add to Wishlist</a>
                         </div>
                     </div>
@@ -142,7 +145,7 @@
                             <img src="images/kingbed.jpg" alt="A single king bed" id="bedPicture3" width="200px">
                             <h6 class="card-subtitle mb-2 text-body-secondary">Royal Serenity: Your Luxurious King Bed
                                 Oasis by the Beach</h6>
-                            <button class="btn-btn-secondary" name="bookKing" id="kingBed">Get Estimate</button>
+                            <button class="btn-btn-secondary" name="bookRoom" id="kingBed">Get Estimate</button>
                             <a href="index.html" class="card-link text-danger">Add to Wishlist</a>
                         </div>
                     </div>
@@ -154,13 +157,18 @@
                                 width="200px">
                             <h6 class="card-subtitle mb-2 text-body-secondary">Californian Charm: Your Exclusive
                                 California King Bed Retreat</h6>
-                            <button class="btn-btn-secondary" name="bookCaliKing" id="kingBed">Get Estimate</button>
+                            <button class="btn-btn-secondary" name="bookRoom" id="kingBed">Get Estimate</button>
                             <a href="index.html" class="card-link text-danger">Add to Wishlist</a>
                         </div>
                     </div>
                 </fieldset>
+            </div> 
+            <label for="estimateText" id="estimateText"> Wondering about the price of paradise? Calculate your resort estimate instantly!</label>
+            <div class="row" id="estimateField">
+               
+                <input type="text" name="estimateText" id="finalEstimate" placeholder="Final Estimate Here" disabled>
             </div>
-            <button id="submitButton" class="btn-btn-secondary" type="submit">Submit</button>
+
         </section>
     </main>
 </body>

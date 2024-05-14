@@ -1,5 +1,5 @@
 #headText{
-    margin-top: 7%;
+    margin-top: 5%;
 }
 #plantnavbar{
     z-index: 1;
@@ -37,6 +37,7 @@
     position: relative; /* Changed to relative positioning */
     text-align: center;
     z-index: 1; /* Ensures the box is above the image */
+    
 }
 /* overnight box additional styling */
 #firstName{
@@ -87,16 +88,16 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 #numberPeople{
-    margin-top: 2%;
+    margin-top: 1%;
 }
 #numberPeople2{
-    margin-top: 2%;
+    margin-top: 1%;
 }
 .radio-group {
-    margin-bottom: 10px; /* Adjust as needed */
+    margin-bottom: 2px; /* Adjust as needed */
 }
 
 /* end of overnight box styling */
@@ -136,4 +137,17 @@
     padding-left: 5%;
 }
 /* end of bed type styling */
-
+#estimateField{
+    width: 20%;
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+#estimateText{
+    width: 100%;
+    margin-top: 3%;
+    font-size: large;
+    font-weight: bold;
+}
