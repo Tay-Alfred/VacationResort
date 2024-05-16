@@ -1,4 +1,3 @@
-"use strict";
 
 //declare variables
 const checkInDate = document.getElementById("checkIn");
@@ -11,15 +10,6 @@ const militaryDiscount = document.getElementById("militaryDiscount");
 const seniorDiscount = document.getElementById("seniorDiscount");
 //input values
 const roomType = ["queenOne", "queenTwo", "californiaKingBed", "kingBed"];
-
-
-//input unknown values
-
-
-//calculate
-
-
-//what do i want it to do
 
 function getRoomRate(checkInDate, roomType) {
     const inSeasonRates = {
@@ -63,6 +53,8 @@ function getRoomRate(checkInDate, roomType) {
 }
 
 // to play around with
+
+
 document.addEventListener("DOMContentLoaded", function() {
     // Get relevant elements
     const checkInDateInput = document.getElementById("checkIn");
